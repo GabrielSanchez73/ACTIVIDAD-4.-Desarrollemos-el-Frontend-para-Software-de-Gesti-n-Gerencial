@@ -1,134 +1,39 @@
-# 🏢 Sistema de Gestión de Productos
+# Sistema de Gestión de Empleados
 
-Sistema web completo para la gestión de inventario, productos y categorías desarrollado como actividad académica.
+Sistema web desarrollado con Node.js, MySQL y React para la gestión de empleados de una empresa.
 
-## ✨ Características Principales
+## Características
 
-- **Gestión completa de productos** (CRUD)
-- **Sistema de categorías inteligente**
-- **Filtros de búsqueda avanzados**
-- **Dashboard con estadísticas**
-- **Interfaz moderna y responsive**
+- CRUD completo de empleados
+- Interfaz web moderna con Material-UI
+- Base de datos MySQL
+- API REST con Express.js
+- Filtros y búsqueda avanzada
+- Estadísticas en tiempo real
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías
 
-- **Frontend**: React.js + Material-UI
-- **Backend**: Node.js + Express.js
-- **Base de Datos**: MySQL
-- **Lenguaje**: JavaScript
+- Backend: Node.js, Express.js, MySQL
+- Frontend: React, Material-UI
+- Base de datos: MySQL
 
-## 🚀 Instalación
+## Instalación
 
-### Requisitos
-- Node.js 18+
-- MySQL 8.0+
+1. Clonar el repositorio
+2. Instalar dependencias del servidor: `cd server && npm install`
+3. Instalar dependencias del cliente: `cd client && npm install`
+4. Configurar la base de datos MySQL
+5. Ejecutar el servidor: `cd server && node index.js`
+6. Ejecutar el cliente: `cd client && npm start`
 
-### Pasos
-1. **Clonar repositorio**
-   ```bash
-   git clone https://github.com/GabrielSanchez73/ACTIVIDAD-1.-Analicemos-y-dise-emos-un-software-para-a-gesti-n-gerencial-de-organizaciones.git
-   cd ACTIVIDAD-1.-Analicemos-y-dise-emos-un-software-para-a-gesti-n-gerencial-de-organizaciones
-   ```
-
-2. **Instalar dependencias del servidor**
-   ```bash
-   cd server
-   npm install
-   ```
-
-3. **Instalar dependencias del cliente**
-   ```bash
-   cd ../client
-   npm install
-   ```
-
-4. **Configurar base de datos**
-   - Crear base de datos MySQL: `sistema_productos`
-   - Ejecutar script: `database.sql`
-
-5. **Iniciar sistema**
-   ```bash
-   # Terminal 1 - Servidor
-   cd server && npm start
-   
-   # Terminal 2 - Cliente
-   cd client && npm start
-   ```
-
-## 📱 Acceso
-
-- **Frontend**: http://localhost:4000
-- **Backend**: http://localhost:5000
-
-## 📊 Funcionalidades
-
-### Gestión de Productos
-- Agregar, editar, eliminar productos
-- Campos: nombre, descripción, precio, categoría, stock, proveedor
-- Validaciones de formulario
-
-### Sistema de Categorías
-- Selector desplegable de categorías existentes
-- Creación de nuevas categorías en tiempo real
-- Sincronización automática
-
-### Filtros de Búsqueda
-- Filtro por nombre
-- Filtro por categoría
-- Filtros de precio (mínimo y máximo)
-- Filtros combinados
-
-### Dashboard
-- Contador de productos totales
-- Stock disponible
-- Precio promedio
-- Número de categorías
-
-## 🏗️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
-├── client/                 # Frontend React
-│   ├── src/
-│   │   ├── App.js         # Componente principal
-│   │   ├── config.js      # Configuración
-│   │   └── ProductTable.js
-│   └── package.json
-├── server/                 # Backend Node.js
-│   ├── index.js           # Servidor Express
-│   ├── db.js              # Conexión MySQL
-│   └── database.sql       # Script de base de datos
-├── README.md
-└── iniciar-sistema.bat    # Script de inicio para Windows
+├── server/          # Backend API
+├── client/          # Frontend React
+└── database.sql     # Script de base de datos
 ```
 
-## 🧪 Pruebas
+## Uso
 
-```bash
-# Pruebas generales del sistema
-node test-system.js
-
-# Pruebas específicas de filtros
-node test-filtros-precio.js
-```
-
-## 📚 Documentación Adicional
-
-- `README_MEJORAS.md` - Detalles de implementación
-- `SISTEMA_FILTROS.md` - Guía de filtros
-- `iniciar-sistema.bat` - Script de inicio automático
-
-## 👨‍💻 Desarrollador
-
-**Gabriel Sánchez** - Estudiante de Ingeniería de Software
-
-## 📅 Fecha
-
-31/08/2025
-
-## �� Licencia
-
-Proyecto académico - Universidad
-
----
-
-**Desarrollado con ❤️ para el aprendizaje y desarrollo profesional**
+El sistema permite gestionar empleados con operaciones de crear, leer, actualizar y eliminar. Incluye filtros por nombre, identificación y estado, además de estadísticas en tiempo real.

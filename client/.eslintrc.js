@@ -92,17 +92,17 @@ module.exports = {
     'arrow-body-style': 'warn',
     'arrow-parens': 'warn',
     
-    // Reglas para destructuring
+    // Reglas para destructuring (usar regla del plugin react)
     'prefer-destructuring': 'warn',
-    'destructuring-assignment': 'warn',
+    'react/destructuring-assignment': 'warn',
     
     // Reglas para async/await
     'prefer-promise-reject-errors': 'warn',
     'no-return-await': 'warn',
     
-    // Reglas para promesas
-    'promise/always-return': 'warn',
-    'promise/no-return-wrap': 'warn',
+    // Reglas para promesas (desactivadas si no está el plugin instalado)
+    // 'promise/always-return': 'warn',
+    // 'promise/no-return-wrap': 'warn',
     
     // Reglas para React
     'react/jsx-uses-react': 'off',

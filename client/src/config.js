@@ -5,32 +5,32 @@ export const CONFIG = {
   
   // Endpoints
   ENDPOINTS: {
+    EMPLEADOS: '/empleados',
+    NOMINAS: '/nominas',
+    BENEFICIOS: '/beneficios',
+    DEDUCCIONES: '/deducciones',
+    REPORTES: '/reportes',
+    ESTADISTICAS: '/estadisticas',
     PRODUCTOS: '/productos',
-    CATEGORIAS: '/categorias',
-    ESTADISTICAS: '/estadisticas'
+    CATEGORIAS: '/categorias'
   },
   
   // Configuración de la aplicación
   APP: {
-    NOMBRE: 'Sistema de Gestión de Productos',
-    DESCRIPCION: 'Control completo de inventario, precios y proveedores',
+    NOMBRE: 'Sistema de Nómina Empresarial',
+    DESCRIPCION: 'Gestión de empleados, salarios, beneficios, deducciones y reportes',
     VERSION: '1.0.0'
   },
   
-  // Configuración de la base de datos
+  // Configuración de la base de datos (referencial)
   DB: {
-    NOMBRE: 'sistema_productos',
-    TABLA: 'productos'
+    NOMBRE: 'sistema_nomina',
   }
 };
 
 // Función helper para construir URLs completas
-export const buildApiUrl = (endpoint) => {
-  return `${CONFIG.API_BASE_URL}${endpoint}`;
-};
+export const buildApiUrl = (endpoint) => `${CONFIG.API_BASE_URL}${endpoint}`;
 
 // Función helper para obtener la URL completa de un endpoint
-export const getApiUrl = (endpointName) => {
-  return buildApiUrl(CONFIG.ENDPOINTS[endpointName]);
-};
+export const getApiUrl = (endpointName) => buildApiUrl(CONFIG.ENDPOINTS[endpointName]);
 
